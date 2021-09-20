@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet" />
+
+    <!--my css-->
+    <style>
+      .jumbotron {
+        padding-top: 6rem;
+        background-color: #e2edff;
+      }
+      #projects {
+        background-color: #e2edff;
+      }
+      section {
+        padding-top: 7rem;
+      }
+      /* Navbar */
+      .navbar {
+        position: relative;
+        z-index: 1;
+      }
+      .navbar-brand {
+        font-family: viga;
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+
+      /* Desktop Version */
+      @media (min-width: 992px) {
+        .navbar-brand,
+        .nav-link {
+          color: white !important;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+        }
+        .nav-link {
+          text-transform: uppercase;
+          margin-right: 30px;
+        }
+
+        .nav-link:hover::after {
+          content: '';
+          display: block;
+          border-bottom: 3px solid blue;
+          width: 50%;
+          margin: auto;
+          padding-bottom: 5px;
+          margin-bottom: -8px;
+        }
+
+        .jumbotron {
+          margin-top: -75px;
+          height: 640px;
+        }
+        .jumbotron .display-4 {
+          font-size: 62px;
+        }
+        .working {
+          text-align: left;
+        }
+        .testimonial h5 {
+          font-size: 32px;
+        }
+      }
+      /* utility"*/
+      .tombol {
+        text-transform: uppercase;
+        border-radius: 40px;
+      }
+
+      /*Jumbotron*/
+      .jumbotron {
+        background-image: url(img/jumbotron-bg.jpg);
+        background-size: cover;
+        height: 540px;
+        text-align: center;
+        position: relative;
+      }
+
+      .jumbotron .container {
+        position: relative;
+        z-index: 1;
+      }
+      .jumbotron .display-4 {
+        color: white;
+        margin-top: 150px;
+        font-weight: 200;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+        font-size: 40px;
+        margin-bottom: 30px;
+      }
+      .jumbotron .display-4 span {
+        font-weight: 500;
+      }
+      .jumbotron::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        position: absolute;
+        bottom: 0;
+      }
+      /*info panel*/
+      .info-panel {
+        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 12px;
+        margin-top: -100px;
+        background-color: white;
+        padding: 30px;
+      }
+      .info-panel img {
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+      .info-panel h4 {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 6px;
+      }
+      .info-panel p {
+        font-size: 14px;
+        color: #acacac;
+        margin-top: -5px;
+        font-weight: 200;
+      }
+
+      /* Working Space */
+      .working {
+        margin-top: 120px;
+        text-align: center;
+      }
+      .working h3 {
+        font-size: 40px;
+        font-weight: 200;
+        text-transform: uppercase;
+        margin-top: 30px;
+      }
+      .working h3 span {
+        font-weight: 500;
+      }
+      .working p {
+        font-size: 18px;
+        color: #acacac;
+        font-weight: 200;
+        margin: 35px 0;
+      }
+      /*testi*/
+      .testimonial {
+        margin-top: 100px;
+      }
+      .testimonial h5 {
+        text-align: center;
+        font-weight: 200;
+        font-family: italic;
+        font-size: 24px;
+      }
+      .testimonial figure img {
+        width: 100px;
+        margin-top: 40px;
+        margin: 0 15px;
+      }
+      .testimonial figure h5 {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-style: normal;
+        color: #1c2c5d;
+      }
+      .testimonial figure p {
+        font-size: 12px;
+        color: #acacac;
+        margin-top: -10px !important;
+      }
+      .testimonial figcaption {
+        text-align: center;
+      }
+    </style>
+
+    <title>Jesaya Sohasuhatan Ambarita</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="jesaya.jpg" alt="jesaya" width="30" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary tombol" href="#">Join Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Akhir Navbar-->
+
+    <!--Jumbotron-->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">
+          <span>Jesaya Sohasuhatan Ambarita</span>
+        </h1>
+        <a href="" class="btn btn-primary tombol">Click Here</a>
+      </div>
+    </div>
+    <!--Akhir Jumbotron-->
+
+    <!--Container-->
+    <div class="container">
+      <!--Info Panel-->
+      <div class="row justify-content-center">
+        <div class="col-10 info-panel">
+          <div class="row">
+            <div class="col-lg">
+              <img src="img/employee.png" alt="employee" class="float-left" />
+              <h4>13 Hours</h4>
+              <p>We serve you from eight in the morning to eight in the evening</p>
+            </div>
+            <div class="col-lg">
+              <img src="img/hires.png" alt="hires" class="float-left" />
+              <h4>High Res</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="col-lg">
+              <img src="img/security.png" alt="security" class="float-left" />
+              <h4>Security</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir Panel -->
+
+      <!--Working Space-->
+      <div class="row working">
+        <div class="col-lg">
+          <img src="img/workingspace.png" alt="workingspace" class="img-fluid" />
+        </div>
+        <div class="col-lg">
+          <h3><span>Jesaya Sohasuhatan Ambarita</span></h3>
+          <p>My name is Jesaya Sohasuhatan Ambarita. I am a student from the santo thomas catholic university in Medan. Faculty of Computer Science and Informatics Engineering study program.</p>
+          <a href="" class="btn btn-primary tombol">Galery</a>
+        </div>
+      </div>
+
+      <section id="contact">
+        <div class="container">
+          <div class="row text-center mb-5">
+            <div class="col">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <form action="" method="GET">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nama Lengkap</label>
+                  <input type="email" class="form-control" id="name" aria-describedby="name" required />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email" required />
+                </div>
+                <div class="mb-3">
+                  <label for="pesan" class="form-label">Pesan</label>
+                  <textarea class="form-control" id="pesan" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        </svg>
+      <!--Akhir Working Space-->
+
+      <!--Teti-->
+      <section class="testimonial">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h5>"Jangan Semangat Tetap Putus Asa Dan Tetap Bernafas Walau Tidak Berguna"</h5>
+          </div>
+        </div>
+        <!--akhir testi-->
+
+
+        <!--figure-->
+        <div class="row justify-content-center">
+          <div class="col-lg-6 justify-content-center d-flex">
+            <figure class="figure">
+              <img src="jesaya.jpg" class="figure-img img-fluid rounded-circle" alt="jesaya" />
+            </figure>
+            <figure class="figure">
+              <img src="fb.jpg" class="figure-img img-fluid rounded-circle" alt="fb" />
+              <figcaption class="figure-caption">
+                <h5>Jesaya Sohasuhatan</h5>
+                <p>Web Developer And Design</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </div>
+      <!--figure-->
+    </div>
+    <!--Akhir Container-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
